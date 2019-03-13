@@ -1,0 +1,88 @@
+/**
+ * Template to Pick your own adventure!
+ *
+ * @LMAD
+ * @3/12
+ */
+import java.util.Scanner;
+//Couldn't figure out how to format it so anything other than 1 was the right answer
+public class PickYourOwn
+{
+    public static void main(String[] args)
+    {
+    Scanner in = new Scanner(System.in);
+    
+    System.out.print("Do you want to go to Red Sox opening game?, 1 for yes any other number for no ");
+    int choice1 = in.nextInt();
+    if(choice1 == 1)
+    {
+        System.out.println("Awesome!");
+        System.out.println("Do you want to buy tickets in the green monster seats(1) or behind home plate(any other number)");
+        int choice2 =in.nextInt();
+        if (choice2 == 1)
+        {
+            System.out.println("Good choice, it will be a great day");
+            System.out.println("Will take the train(1) or drive in(any other number)");
+            int choice3 =in.nextInt();
+            if (choice3 == 1)
+            {
+            System.out.println("You make the game right on time");
+            System.out.println("Will you eat a cheeseburger(1) or a hot dog(Other #)");
+            int choice4 =in.nextInt();
+                if (choice4 == 1)
+                {
+                    System.out.println("The burger is delicious, you are happy with it. ");
+                    System.out.println("Someone is sitting in your seat. Do you knock him out(1) or call security(other #)");
+                    int choice5 =in.nextInt();
+                    if (choice5 == 1)
+                    {
+                        System.out.println("He is taken to the hospital and you get your seat back. ");
+                        System.out.println("You have an idea, do you run onto the field(1) or sit down and watch the game(other #)");
+                        int choice6 =in.nextInt();
+                        if (choice6 == 1)
+                        {    
+                            System.out.println("You make it across the field and have a lot of fun. ");
+                            System.out.println("Now it's the bottom of the ninth, your sitting near the foul line, and a fly ball is coming towards you. ");
+                            System.out.println("Do you catch it (1) or let it drop(2)");
+                            int choice7 =in.nextInt();
+                            if (choice7 == 1)
+                            {
+                                System.out.println("You catch Mookie Betts's Home Run. Sox Win! The end. ");
+                            }
+                            else
+                            {
+                                System.out.println("The ball goes foul because you didn't catch it, and the Sox end up losing. The end. ");
+                            }
+                        }
+                        else
+                        {
+                            System.out.println("You don't do anything and fall asleep, missing the game. The end. ");
+                        }
+                    }
+                    else
+                    {
+                        System.out.println("They do nothing and you can't sit down. The end. ");
+                    }
+                }
+                else
+                {
+                    System.out.println("The hot dog is poisoned and you miss the game. The end. ");
+                }   
+            }
+            else
+            
+            {
+            System.out.println("Your car breaks down and you miss the game. The end. ");
+            }
+        }
+        else
+        {
+            System.out.println("They were too expensive and you decided not to go. The end.");
+        }
+    }
+    else
+    {
+        System.out.println("You stayed home and watched it on TV. The end");
+    }
+}
+}
