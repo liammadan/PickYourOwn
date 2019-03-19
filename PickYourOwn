@@ -1,3 +1,4 @@
+
 /**
  * Template to Pick your own adventure!
  *
@@ -82,7 +83,18 @@ public class PickYourOwn
     }
     else
     {
-        System.out.println("You stayed home and watched it on TV. The end");
+        System.out.println("You decided not to go.");
+        int score = (int) (Math.random() * 10 + 1);
+        if (score < 5)
+        {
+          System.out.println("You stayed home and watched it on TV. They lost. The end");
+        }
+        else
+        {
+            System.out.println("You stayed home and watched it on TV. They won, but you were sad you didn't go. The end");
+        }
+        
     }
 }
 }
+
